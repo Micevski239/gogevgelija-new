@@ -76,13 +76,6 @@ export default function Nav({
             <span aria-hidden className="text-border">/</span>
             <span>{switcher.other}</span>
           </Link>
-          <a
-            href="#download"
-            className="rounded-full bg-accent px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-sm shadow-accent/30 transition hover:bg-accent-strong"
-          >
-            {dict.cta}
-          </a>
-
           {/* Hamburger — mobile only */}
           <button
             aria-label={menuOpen ? "Close menu" : "Open menu"}
