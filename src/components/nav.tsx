@@ -70,7 +70,7 @@ export default function Nav({
             href={`/${otherLang}`}
             onClick={() => persistLocale(otherLang)}
             aria-label={`Switch to ${switcher.other}`}
-            className="hidden items-center gap-1 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold tracking-wide text-muted transition hover:border-foreground hover:text-foreground sm:inline-flex"
+            className="inline-flex items-center gap-1 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold tracking-wide text-muted transition hover:border-foreground hover:text-foreground"
           >
             <span className="text-foreground">{switcher.label}</span>
             <span aria-hidden className="text-border">/</span>
@@ -116,15 +116,6 @@ export default function Nav({
                 {l.label}
               </a>
             ))}
-            <Link
-              href={`/${otherLang}`}
-              onClick={() => persistLocale(otherLang)}
-              className="mt-2 inline-flex w-fit items-center gap-1 rounded-full border border-border px-3 py-1.5 text-xs font-semibold tracking-wide"
-            >
-              <span className="text-foreground">{switcher.label}</span>
-              <span aria-hidden className="text-border">/</span>
-              <span>{switcher.other}</span>
-            </Link>
           </nav>
         </div>
       )}
